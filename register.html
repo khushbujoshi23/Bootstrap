@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+
+        $(function () {
+            $("#idpage").load("navheader.html");
+        });
+    </script>
+</head>
+<body>
+    <div class="fixed-header"></div>
+    <div id="idpage"></div>
+    <div class="container">
+        <center>
+            <form style="border:3px solid #96D4D5; padding:20px; height:450px; width:700px;">
+
+                <div class="form-outline mb-4">
+                    <label class="form-label" for="form2Example1">Registration Form</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="registerName" placeholder="Enter Your Name" class="form-control" style="border-color:gray" />
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="text" id="registerUsername" placeholder="Enter Username" class="form-control" style="border-color:gray" />
+                </div>
+
+                <div class="form-outline mb-4">
+                    <input type="email" id="registerEmail" placeholder="Enter E-mail" class="form-control" style="border-color:gray" />
+                </div>
+
+                <br />
+                <div class="form-outline mb-4">
+                    <input type="password" id="registerPassword" placeholder="Enter Password" class="form-control" style="border-color:gray" />
+                </div>
+
+                <br />
+                <div class="form-outline mb-4">
+                    <input type="password" id="registerRepeatPassword" placeholder="Enter Confirm Password" class="form-control" style="border-color:gray" />
+                </div>
+
+                <br />
+                <div class="form-check d-flex justify-content-center mb-4">
+                    <input class="form-check-input me-2" type="checkbox" value="" id="registerCheck" checked
+                           aria-describedby="registerCheckHelpText" /> 
+                    <label class="form-check-label" for="registerCheck">
+                        I have read and agree to the terms
+                    </label>
+
+                </div>
+
+                <br />
+                <center><button type="submit" style="background-color: #96D4D5; width: 80px; border-color: gray; font-weight:bold" class="btn btn-primary btn-block mb-3">Sign in</button></center>
+            </form>
+        <br /><br /><br />
+            </center>
+    </div>
+</body>
+</html>
